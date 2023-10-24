@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { useEffect, useState } from "react";
 import API from "@/service";
-
+import Image from "next/image";
+import img from "../images/meme.png";
 export type TableProps = {};
 type TableData = {
     id: number;
@@ -220,6 +221,23 @@ const Table: React.FC<TableProps> = (props) => {
                     </li>
                 </ul>
             </nav>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100vh",
+                }}
+            >
+                <Image src={img} alt="Meme" />
+            </div>
+            <p>
+                I am a responsible and goal-oriented person with a quick
+                learning ability. I was involved in a non- commercial project
+                that has given me an understanding of Scrum methodology. Working
+                in a well-organized team I have learned to be a good team
+                player. Hope, you'll give me a chance!{" "}
+            </p>
         </div>
     );
 

@@ -62,6 +62,7 @@ const Table: React.FC<TableProps> = (props) => {
                 })
                 .catch((error) => {
                     console.error("Помилка при оновленні даних:", error);
+                    alert("Enter a date YYYY-MM-DD");
                 });
         }
     };
@@ -121,6 +122,7 @@ const Table: React.FC<TableProps> = (props) => {
                                     <td>
                                         <input
                                             type="text"
+                                            placeholder="YYYY-MM-DD"
                                             value={
                                                 editedData?.birthday_date || ""
                                             }
